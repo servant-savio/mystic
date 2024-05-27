@@ -3,7 +3,7 @@ import banner from './images/mystic-header-main.png';
 const Header = () => {
   return (
     <header>
-      <img src={banner} />
+      <img class="mysticBannerImage" src={banner} />
     </header>
   );
 };
