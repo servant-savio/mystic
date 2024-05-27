@@ -9,33 +9,43 @@ import GloriousMysteries from './glorious-mysteries';
 import LuminousMysteries from './luminous-mysteries';
 
 const Rosary = () => {
-  const routes = [
-    '/mystic/rosary', 
-    '/mystic/rosary/joyful-mysteries', 
-    '/mystic/rosary/sorrowful-mysteries',
-    '/mystic/rosary/glorious-mysteries', 
-    '/mystic/rosary/luminous-mysteries'
-  ];
+  const routes = {
+    x: [
+      '/mystic/rosary', 
+      '/mystic/rosary/joyful-mysteries', 
+      '/mystic/rosary/sorrowful-mysteries',
+      '/mystic/rosary/glorious-mysteries', 
+      '/mystic/rosary/luminous-mysteries'
+    ],
+    y: [
+      '1',
+      '2',
+      '3',
+      '4',
+      '5'
+    ]};
 
     const navigate = useNavigate();
     const location = useLocation();
-    const currentIndex = routes.indexOf(location.pathname);
+    const currentIndex = routesX.indexOf(location.pathname);
   
-    const handlePrevious = () => {
+    const handlePreviousX = () => {
       if (currentIndex > 0) {
-        navigate(routes[currentIndex - 1]);
+        navigate(routesX[currentIndex - 1]);
       }
     };
   
-    const handleNext = () => {
-      if (currentIndex < routes.length - 1) {
-        navigate(routes[currentIndex + 1]);
+    const handleNextX = () => {
+      if (currentIndex < routesX.length - 1) {
+        navigate(routesX[currentIndex + 1]);
       }
     };
   
     const swipeHandlers = useSwipeable({
-      onSwipedLeft: () => handleNext(),
-      onSwipedRight: () => handlePrevious()
+      onSwipedLeft: () => handleNextX(),
+      onSwipedRight: () => handlePreviousX(),
+      onSwipedUp: () => handleNextY(),
+      onSwipedDown: () => handlePreviousY()
     });
   return (
       <div {...swipeHandlers}>
