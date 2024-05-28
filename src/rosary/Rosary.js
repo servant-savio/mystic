@@ -7,6 +7,7 @@ import JoyfulMysteries from './joyful-mysteries';
 import SorrowfulMysteries from './sorrowful-mysteries';
 import GloriousMysteries from './glorious-mysteries';
 import LuminousMysteries from './luminous-mysteries';
+import './Rosary.css';
 
 const Rosary = () => {
   const routesX = [

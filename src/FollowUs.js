@@ -6,10 +6,10 @@ const FollowUs = () => {
     <div>
       <h3>Follow us</h3>
       <div>
-        <a href="https://x.com/ProjectMysticDV" target='_blank' rel="noreferrer"><img src={mysticX} /></a>
+        <a href="https://x.com/ProjectMysticDV" target='_blank' rel="noreferrer"><img alt="Follow @ProjectMysticDV" src={mysticX} /></a>
       </div>
       <div>
-        <a href="https://x.com/ServantSavio" target='_blank' rel="noreferrer"><img src={savioX} /></a>
+        <a href="https://x.com/ServantSavio" target='_blank' rel="noreferrer"><img alt="Follow @ServantSavio" src={savioX} /></a>
       </div>
     </div>
   );

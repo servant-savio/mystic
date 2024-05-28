@@ -4,7 +4,7 @@ import Mystery from '../components/Mystery';
 import MainComponent from '../components/MainComponent';
 
 const component = () => {
-  const title = "Luminous mysteries";
+  const title = "Luminous Mysteries";
   const schedule = "Thursday";
   const mysteries = [
     "Baptism of the Lord",
