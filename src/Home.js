@@ -1,5 +1,5 @@
 import React from 'react';
-import mysticLogo from './images/mystic-logo.png';
+import mysticLogo from './images/mystic-500.png';
 import FollowUs from './FollowUs';
 
 const Home = () => {
