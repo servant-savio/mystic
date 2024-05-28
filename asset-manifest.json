@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mystic/static/css/main.8f279978.css",
-    "main.js": "/mystic/static/js/main.16a5c060.js",
+    "main.js": "/mystic/static/js/main.91b508c7.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
     "static/media/rosary.png": "/mystic/static/media/rosary.0a233d120e1af84c991d.png",
-    "static/media/mystic-logo.png": "/mystic/static/media/mystic-logo.b242d254f0553294f2df.png",
+    "static/media/mystic-500.png": "/mystic/static/media/mystic-500.c58f838c838305211647.png",
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.dce0ba93e369924a8408.png",
     "index.html": "/mystic/index.html",
     "main.8f279978.css.map": "/mystic/static/css/main.8f279978.css.map",
-    "main.16a5c060.js.map": "/mystic/static/js/main.16a5c060.js.map",
+    "main.91b508c7.js.map": "/mystic/static/js/main.91b508c7.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f279978.css",
-    "static/js/main.16a5c060.js"
+    "static/js/main.91b508c7.js"
   ]
 }
