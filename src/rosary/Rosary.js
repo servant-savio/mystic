@@ -93,11 +93,11 @@ const Rosary = () => {
   return (
       <div {...swipeHandlers}>
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-        <button onClick={handlePreviousX} disabled={currentIndexX === 0}>Previous</button>
+        <button onClick={handlePreviousX} disabled={currentIndexX === 0}>&lt;&lt;</button>
         {titles.map((title, index) => (
-        <button key={index}>{title}</button>
+        <button key={index} onClick={()=>navigate(routesX[index])} >{title}</button>
         ))}
-        <button onClick={handleNextX} disabled={currentIndexX === routesX.length - 1}>Next</button>
+        <button onClick={handleNextX} disabled={currentIndexX === routesX.length - 1}>&gt;&gt;</button>
       </div>
       <div>
         <Routes>
