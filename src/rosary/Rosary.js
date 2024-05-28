@@ -30,36 +30,44 @@ const Rosary = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const locationPathBase = location.pathname.replace(/\/\d+$/gi, "").replace(/\/\d+$/gi, "");
-    const currentIndexX = routesX.indexOf(locationPathBase);
-    const currentIndexY = routesY.findIndex(route => location.pathname.endsWith(`/${route}`));
+    let currentIndexX = routesX.indexOf(locationPathBase);
+    let currentIndexY = routesY.findIndex(route => location.pathname.endsWith(`/${route}`));
 
     currentLocationX = routesX[currentIndexX];
 
     const handlePreviousX = () => {
       if (currentIndexX > 0) {
-        currentLocationX = routesX[currentIndexX - 1];
+        currentIndexX = currentIndexX - 1;
+        currentLocationX = routesX[currentIndexX];
         navigate(currentLocationX);
       }
     };
   
     const handleNextX = () => {
       if (currentIndexX < routesX.length - 1) {
-        currentLocationX = routesX[currentIndexX + 1]
+        currentIndexX = currentIndexX + 1;
+        currentLocationX = routesX[currentIndexX]
         navigate(currentLocationX);
       }
     };
   
     const handlePreviousY = () => {
-      if (currentIndexY > 0) {
-        currentLocationY = `${currentLocationX}/${routesY[currentIndexY - 1]}`;
-        navigate();
+      if (currentIndexX > 0) {
+        if (currentIndexY > 0) {
+          currentIndexY = currentIndexY - 1;
+          currentLocationY = `${currentLocationX}/${routesY[currentIndexY]}`;
+          navigate();
+        }
       }
     };
   
     const handleNextY = () => {
-      if (currentIndexY < routesY.length - 1) {
-        currentLocationY = `${currentLocationX}/${routesY[currentIndexY + 1]}`;
-        navigate(currentLocationY);
+      if (currentIndexX > 0) {
+        if (currentIndexY < routesY.length - 1) {
+          currentIndexY = currentIndexY + 1;
+          currentLocationY = `${currentLocationX}/${routesY[currentIndexY]}`;
+          navigate(currentLocationY);
+        }  
       }
     };
 
@@ -67,7 +75,10 @@ const Rosary = () => {
       onSwipedLeft: () => handleNextX(),
       onSwipedRight: () => handlePreviousX(),
       onSwipedUp: () => handleNextY(),
-      onSwipedDown: () => handlePreviousY()
+      onSwipedDown: () => handlePreviousY(),
+      preventDefaultTouchmoveEvent: true, // This helps prevent the default behavior
+      trackTouch: true,
+      trackMouse: true
     });
   return (
       <div {...swipeHandlers}>
