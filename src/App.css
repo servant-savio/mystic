@@ -31,6 +31,10 @@ main {
   width: 100%;
 }
 
+.divineMercyImage {
+  max-width: 800px;
+  width: 100%;
+}
 .mysticBannerImage {
   max-width: 500px;
   width: 100%;
