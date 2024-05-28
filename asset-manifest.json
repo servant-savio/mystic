@@ -1,18 +1,38 @@
 {
   "files": {
-    "main.css": "/mystic/static/css/main.8f279978.css",
-    "main.js": "/mystic/static/js/main.6e8eacaf.js",
+    "main.css": "/mystic/static/css/main.5ca914f6.css",
+    "main.js": "/mystic/static/js/main.3977fbf6.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
+    "static/media/sorrowful-4-800.png": "/mystic/static/media/sorrowful-4-800.c3044a26ab97c359d779.png",
+    "static/media/luminous-2-800.png": "/mystic/static/media/luminous-2-800.ac8bdbc4662f2086fc1a.png",
+    "static/media/joyful-5-800.png": "/mystic/static/media/joyful-5-800.7d37291c6663cfeb21d4.png",
+    "static/media/sorrowful-5-800.png": "/mystic/static/media/sorrowful-5-800.51fd652f3a6d5fd53d7f.png",
+    "static/media/glorious-3-800.png": "/mystic/static/media/glorious-3-800.32042a785fb3107471c4.png",
+    "static/media/joyful-1-800.png": "/mystic/static/media/joyful-1-800.99e4a5ced549c225bb7c.png",
+    "static/media/joyful-3-800.png": "/mystic/static/media/joyful-3-800.1b6f6cc1b4ee78472385.png",
+    "static/media/glorious-1-800.png": "/mystic/static/media/glorious-1-800.d3c99b294b94e60da125.png",
+    "static/media/glorious-5-800.png": "/mystic/static/media/glorious-5-800.7b8ad85346b3353e53a4.png",
     "static/media/rosary-800.png": "/mystic/static/media/rosary-800.6511de816ff3ecd48445.png",
+    "static/media/sorrowful-3-800.png": "/mystic/static/media/sorrowful-3-800.d59650cd657aae10d705.png",
+    "static/media/glorious-2-800.png": "/mystic/static/media/glorious-2-800.732baab15c1577527297.png",
+    "static/media/joyful-2-800.png": "/mystic/static/media/joyful-2-800.11adda1e6fb6bf6101d2.png",
+    "static/media/joyful-4-800.png": "/mystic/static/media/joyful-4-800.6c1d19abad19f927e7b0.png",
+    "static/media/luminous-1-800.png": "/mystic/static/media/luminous-1-800.471b85c04304f62d4139.png",
+    "static/media/sorrowful-1-800.png": "/mystic/static/media/sorrowful-1-800.a1ceb5a5e942788331b5.png",
+    "static/media/luminous-3-800.png": "/mystic/static/media/luminous-3-800.23e5c309801875adc5b7.png",
+    "static/media/luminous-5-800.png": "/mystic/static/media/luminous-5-800.60d7c333d6035a3f830b.png",
+    "static/media/glorious-4-800.png": "/mystic/static/media/glorious-4-800.c214fc68a9a84c49ccdd.png",
+    "static/media/luminous-4-800.png": "/mystic/static/media/luminous-4-800.a889a49710c6a289f86a.png",
+    "static/media/sorrowful-2-800.png": "/mystic/static/media/sorrowful-2-800.5027831f4f8ed88be998.png",
     "static/media/mystic-500.png": "/mystic/static/media/mystic-500.c58f838c838305211647.png",
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.dce0ba93e369924a8408.png",
     "index.html": "/mystic/index.html",
-    "main.8f279978.css.map": "/mystic/static/css/main.8f279978.css.map",
-    "main.6e8eacaf.js.map": "/mystic/static/js/main.6e8eacaf.js.map",
+    "main.5ca914f6.css.map": "/mystic/static/css/main.5ca914f6.css.map",
+    "main.3977fbf6.js.map": "/mystic/static/js/main.3977fbf6.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f279978.css",
-    "static/js/main.6e8eacaf.js"
+    "static/css/main.5ca914f6.css",
+    "static/js/main.3977fbf6.js"
   ]
 }
