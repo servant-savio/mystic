@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import rosaryGuide from '../images/rosary.png';
+import rosaryGuide from '../images/rosary-800.png';
 const MainRosary = () => {
   const navigate = useNavigate();
   const handleHotSpotClick = (mysteries) => {
