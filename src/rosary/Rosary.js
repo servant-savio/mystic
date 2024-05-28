@@ -9,38 +9,60 @@ import GloriousMysteries from './glorious-mysteries';
 import LuminousMysteries from './luminous-mysteries';
 
 const Rosary = () => {
-  const routes = {
-    x: [
+  const routesX = [
       '/mystic/rosary', 
       '/mystic/rosary/joyful-mysteries', 
       '/mystic/rosary/sorrowful-mysteries',
       '/mystic/rosary/glorious-mysteries', 
       '/mystic/rosary/luminous-mysteries'
-    ],
-    y: [
+    ];
+  const routesY = [
       '1',
       '2',
       '3',
       '4',
       '5'
-    ]};
+    ];
+  
+  let currentLocationX;
+  let currentLocationY;
 
     const navigate = useNavigate();
     const location = useLocation();
-    const currentIndex = routesX.indexOf(location.pathname);
-  
+    const locationPathBase = location.pathname.replace(/\/\d+$/gi, "").replace(/\/\d+$/gi, "");
+    const currentIndexX = routesX.indexOf(locationPathBase);
+    const currentIndexY = routesY.findIndex(route => location.pathname.endsWith(`/${route}`));
+
+    currentLocationX = routesX[currentIndexX];
+
     const handlePreviousX = () => {
-      if (currentIndex > 0) {
-        navigate(routesX[currentIndex - 1]);
+      if (currentIndexX > 0) {
+        currentLocationX = routesX[currentIndexX - 1];
+        navigate(currentLocationX);
       }
     };
   
     const handleNextX = () => {
-      if (currentIndex < routesX.length - 1) {
-        navigate(routesX[currentIndex + 1]);
+      if (currentIndexX < routesX.length - 1) {
+        currentLocationX = routesX[currentIndexX + 1]
+        navigate(currentLocationX);
       }
     };
   
+    const handlePreviousY = () => {
+      if (currentIndexY > 0) {
+        currentLocationY = `${currentLocationX}/${routesY[currentIndexY - 1]}`;
+        navigate();
+      }
+    };
+  
+    const handleNextY = () => {
+      if (currentIndexY < routesY.length - 1) {
+        currentLocationY = `${currentLocationX}/${routesY[currentIndexY + 1]}`;
+        navigate(currentLocationY);
+      }
+    };
+
     const swipeHandlers = useSwipeable({
       onSwipedLeft: () => handleNextX(),
       onSwipedRight: () => handlePreviousX(),
@@ -50,8 +72,8 @@ const Rosary = () => {
   return (
       <div {...swipeHandlers}>
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-        <button onClick={handlePrevious} disabled={currentIndex === 0}>Previous</button>
-        <button onClick={handleNext} disabled={currentIndex === routes.length - 1}>Next</button>
+        <button onClick={handlePreviousX} disabled={currentIndexX === 0}>Previous</button>
+        <button onClick={handleNextX} disabled={currentIndexX === routesX.length - 1}>Next</button>
       </div>
       <div>
         <Routes>
