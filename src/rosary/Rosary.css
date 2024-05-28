@@ -54,3 +54,8 @@
 .hotspot {
   background-color: transparent;
 }
+
+.heroImage {
+  max-width: 800px;
+  width: 100%;
+}

@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Mystery = ({details}) => {
-  const {title, mystery} = details;
+  const {title, mystery, hero} = details;
   return (
     <div class="mysteries">
-      <h2>{title}</h2>
-      <h1>{mystery}</h1>
+      <img className='heroImage' src={hero} alt={`${title} - ${mystery}`} />
     </div>
   );
 };
