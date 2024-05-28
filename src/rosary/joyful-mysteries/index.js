@@ -8,8 +8,9 @@ import mystery3Image from '../images/joyful-3-800.png';
 import mystery4Image from '../images/joyful-4-800.png';
 import mystery5Image from '../images/joyful-5-800.png';
 
-const JoyfulMysteries = () => {
-  const title = "Joyful Mysteries";
+export const joyfulTitle = "Joyful Mysteries";
+const title = joyfulTitle;
+export const JoyfulMysteries = () => {  
   const schedule = "Monday, Saturday"
   const mysteries = [
     "Annunciation",
@@ -38,4 +39,3 @@ const JoyfulMysteries = () => {
   );
 };
 
-export default JoyfulMysteries;

@@ -3,13 +3,20 @@ import { Route, Routes } from 'react-router-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
 import MainRosary from './MainRosary';
-import JoyfulMysteries from './joyful-mysteries';
-import SorrowfulMysteries from './sorrowful-mysteries';
-import GloriousMysteries from './glorious-mysteries';
-import LuminousMysteries from './luminous-mysteries';
+import {joyfulTitle, JoyfulMysteries} from './joyful-mysteries';
+import {sorrowfullTitle, SorrowfulMysteries} from './sorrowful-mysteries';
+import {gloriousTitle, GloriousMysteries} from './glorious-mysteries';
+import {luminousTitle, LuminousMysteries} from './luminous-mysteries';
 import './Rosary.css';
 
 const Rosary = () => {
+  const titles = [
+    "Rosary Guide", 
+    joyfulTitle,
+    sorrowfullTitle,
+    gloriousTitle,
+    luminousTitle
+  ];
   const routesX = [
       '/mystic/rosary', 
       '/mystic/rosary/joyful-mysteries', 
@@ -57,7 +64,7 @@ const Rosary = () => {
         if (currentIndexY > 0) {
           currentIndexY = currentIndexY - 1;
           currentLocationY = `${currentLocationX}/${routesY[currentIndexY]}`;
-          navigate();
+          navigate(currentLocationY);
         }
       }
     };
@@ -81,10 +88,15 @@ const Rosary = () => {
       trackTouch: true,
       trackMouse: true
     });
+    titles.forEach((value, index) => <button>Rosary Guide</button>);
+
   return (
       <div {...swipeHandlers}>
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
         <button onClick={handlePreviousX} disabled={currentIndexX === 0}>Previous</button>
+        {titles.map((title, index) => (
+        <button key={index}>{title}</button>
+        ))}
         <button onClick={handleNextX} disabled={currentIndexX === routesX.length - 1}>Next</button>
       </div>
       <div>

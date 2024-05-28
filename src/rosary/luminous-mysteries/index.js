@@ -8,8 +8,9 @@ import mystery3Image from '../images/luminous-3-800.png';
 import mystery4Image from '../images/luminous-4-800.png';
 import mystery5Image from '../images/luminous-5-800.png';
 
-const component = () => {
-  const title = "Luminous Mysteries";
+export const luminousTitle = "Luminous Mysteries";
+const title = luminousTitle;
+export const LuminousMysteries = () => {
   const schedule = "Thursday";
   const mysteries = [
     "Baptism of the Lord",
@@ -37,5 +38,3 @@ const component = () => {
     </Routes>
   );
 };
-
-export default component;

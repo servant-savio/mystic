@@ -8,8 +8,9 @@ import mystery3Image from '../images/glorious-3-800.png';
 import mystery4Image from '../images/glorious-4-800.png';
 import mystery5Image from '../images/glorious-5-800.png';
 
-const GloriousMysteries = () => {
-  const title = "Glorious Mysteries";
+export const gloriousTitle = "Glorious Mysteries";
+const title = gloriousTitle;
+export const GloriousMysteries = () => {
   const schedule = "Wednesday, Sunday";
   const mysteries = [
     "Resurrection",
@@ -38,5 +39,3 @@ const GloriousMysteries = () => {
     </Routes>
   );
 };
-
-export default GloriousMysteries;

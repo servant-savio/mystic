@@ -8,8 +8,9 @@ import mystery3Image from '../images/sorrowful-3-800.png';
 import mystery4Image from '../images/sorrowful-4-800.png';
 import mystery5Image from '../images/sorrowful-5-800.png';
 
-const component = () => {
-  const title = "Sorrowful Mysteries";
+export const sorrowfullTitle = "Sorrowful Mysteries";
+const title = sorrowfullTitle;
+export const SorrowfulMysteries = () => {
   const schedule = "Tuesday, Friday";
   const mysteries = [
     "Agony in the Garden",
@@ -38,5 +39,3 @@ const component = () => {
     </Routes>
   );
 };
-
-export default component;
