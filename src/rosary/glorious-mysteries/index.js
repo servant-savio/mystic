@@ -7,6 +7,7 @@ import mystery2Image from '../images/glorious-2-800.png';
 import mystery3Image from '../images/glorious-3-800.png';
 import mystery4Image from '../images/glorious-4-800.png';
 import mystery5Image from '../images/glorious-5-800.png';
+import mainHero from '../images/glorious.png';
 
 export const gloriousTitle = "Glorious Mysteries";
 const title = gloriousTitle;
@@ -30,7 +31,7 @@ export const GloriousMysteries = () => {
 
   return (
     <Routes>
-      <Route path="" element={<MainComponent mysteryInfo={{title, schedule, mysteries}} />} />
+      <Route path="" element={<MainComponent title hero={mainHero} />} />
       <Route path="1" element={<Mystery details={{title, mystery: mysteries[0], hero: hero[0]}} />} />
       <Route path="2" element={<Mystery details={{title, mystery: mysteries[1], hero: hero[1]}} />} />
       <Route path="3" element={<Mystery details={{title, mystery: mysteries[2], hero: hero[2]}} />} />
