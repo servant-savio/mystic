@@ -8,6 +8,7 @@ const Nav = () => {
         <li><Link to="/mystic/home">Home</Link></li>
         <li><Link to="/mystic/rosary">Rosary</Link></li>
         <li><Link to="/mystic/divine-mercy">Divine Mercy</Link></li>
+        <li><Link to="/mystic/about">About</Link></li>
       </ul>
     </nav>
   );

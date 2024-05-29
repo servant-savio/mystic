@@ -30,6 +30,7 @@ import mainHero1 from './rosary/images/glorious.png';
 import mainHero2 from './rosary/images/luminous.png';
 import mainHero3 from './rosary/images/joyful.png';
 import mainHero4 from './rosary/images/sorrowful.png';
+import banner from './images/mystic-header-main.png';
 
 const PreLoad = () => {
   useEffect(() => {
@@ -61,7 +62,8 @@ const PreLoad = () => {
       mainHero1,
       mainHero2,
       mainHero3,
-      mainHero4
+      mainHero4,
+      banner
     ]
     images.map((img) => preloadImage(img)
       .then(() => console.log(`Image ${img} preloaded successfully`))
