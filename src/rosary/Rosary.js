@@ -35,50 +35,57 @@ const Rosary = () => {
     ];
   
   let currentLocation;
-    const navigate = useNavigate();
-    const location = useLocation();
-    const locationPathBase = location.pathname.replace(/\/\d+$/gi, "").replace(/\/\d+$/gi, "");
-    let currentIndex = routes.findIndex(route => location.pathname.endsWith(`/${route}`));
-    if (currentIndex===-1) {
-      currentIndex = 0;
-    }
+  const navigate = useNavigate();
+  const location = useLocation();
+  const locationPathBase = location.pathname.replace(/\/\d+$/gi, "").replace(/\/\d+$/gi, "");
+  const isRoot = (locationPathBase === "/mystic/rosary");
+  let currentIndex = routes.findIndex(route => location.pathname.endsWith(`/${route}`));
+  if (currentIndex===-1) {
+    currentIndex = 0;
+  }
 
-    const handlePrevious = () => {
+  const handlePrevious = () => {
+    if (!isRoot) {
       if (currentIndex > 0) {
         currentIndex = currentIndex - 1;
         const mysteryNum = `${(currentIndex===0)? '' : '/'}${routes[currentIndex]}`;
         currentLocation = `${locationPathBase}${mysteryNum}`;
         navigate(currentLocation);
       }
-    };
-  
-    const handleNext = () => {
+    }
+  };
+
+  const handleNext = () => {
+    if (!isRoot) {
       if (currentIndex < routes.length - 1) {
         currentIndex = currentIndex + 1;
         currentLocation = `${locationPathBase}/${routes[currentIndex]}`;
         navigate(currentLocation);
-      }  
-    };
+      }
+    }
+  };
 
-    const swipeHandlers = useSwipeable({
-      onSwipedLeft: () => handleNext(),
-      onSwipedRight: () => handlePrevious(),
-      preventDefaultTouchmoveEvent: true, // This helps prevent the default behavior
-      trackTouch: true,
-      trackMouse: true
-    });
-    titles.forEach((value, index) => <button>Rosary Guide</button>);
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrevious(),
+    preventDefaultTouchmoveEvent: true, // This helps prevent the default behavior
+    trackTouch: true,
+    trackMouse: true
+  });
+  titles.forEach((value, index) => <button>Rosary Guide</button>);
   return (
       <div {...swipeHandlers}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-          {titles.map((title, index) => {
-              if (index > 0) {
-                return(
-                  <button key={index} onClick={()=>navigate(mysteryRoutes[index])} >{title}</button>            
-                )
+        <div className='buttonContainer'>
+          <div className='buttonSubContainer'>          
+            {titles.map((title, index) => {
+                if (index > 0) {
+                  return(
+                    <button class="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >{title}</button>            
+                  )
+                }
               }
-            }
-          )}
+            )}
+          </div>
         </div>
       <div className='mainRosary'>
         <Routes>

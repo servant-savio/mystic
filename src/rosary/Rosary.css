@@ -88,3 +88,27 @@
   cursor: pointer;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mysteryButtons {
+  width: 100px;
+  background-color: #284a60; /* Primary color */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Padding for button */
+  margin: 5px;
+  border: none; /* Remove default border */
+  border-radius: 2px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  outline: none; /* Remove outline */  
+}
+.buttonSubContainer {
+  max-width: 800px;
+  width: 100%;
+  display: 'flex';
+  justify-content: space-between;
+  padding: 5px;
+}
