@@ -31,10 +31,13 @@ import mainHero2 from './rosary/images/luminous.png';
 import mainHero3 from './rosary/images/joyful.png';
 import mainHero4 from './rosary/images/sorrowful.png';
 import banner from './images/mystic-header-main.png';
+import mysticLogo from './images/mystic-500.png';
 
 const PreLoad = () => {
   useEffect(() => {
     const images = [
+      mysticLogo,
+      rosaryGuide,
       savioX,
       mysticX,
       mystery11Image,
@@ -58,7 +61,6 @@ const PreLoad = () => {
       mystery44Image,
       mystery45Image,
       divineMercyImage,
-      rosaryGuide,
       mainHero1,
       mainHero2,
       mainHero3,
