@@ -9,10 +9,7 @@
 ![alt text](images/screenshot.png)
 
 ### Phone
-
-![alt text](images/Mystic%20Rosary%20-%20iPhone.png)
-
-![alt text](images/Project%20Mystic%20-%20iPhone.png)
+![image](https://github.com/servant-savio/mystic/assets/170841131/cbdacbdc-cd41-4770-8f9b-a413803866e7)
 
 
 ## Follow us
