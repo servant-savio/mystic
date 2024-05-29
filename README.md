@@ -4,6 +4,8 @@
 
 * https://servant-savio.github.io/mystic/
 
+## Screenshots
+![alt text](images/screenshot.png)
 ## Follow us
 
 <a href="https://x.com/ProjectMysticDV"><img src="./images/ProjectMysticDVX.png" /></a>&nbsp;&nbsp;<a href="https://x.com/ServantSavio"><img src="./images/ServantSavioX.png" /></a>
