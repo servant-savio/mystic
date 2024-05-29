@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mystic/static/css/main.d3d0f11f.css",
-    "main.js": "/mystic/static/js/main.0a5b28cb.js",
+    "main.js": "/mystic/static/js/main.d606ebf0.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
     "static/media/sorrowful-4-800.png": "/mystic/static/media/sorrowful-4-800.c3044a26ab97c359d779.png",
     "static/media/luminous-2-800.png": "/mystic/static/media/luminous-2-800.ac8bdbc4662f2086fc1a.png",
@@ -29,11 +29,11 @@
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.dce0ba93e369924a8408.png",
     "index.html": "/mystic/index.html",
     "main.d3d0f11f.css.map": "/mystic/static/css/main.d3d0f11f.css.map",
-    "main.0a5b28cb.js.map": "/mystic/static/js/main.0a5b28cb.js.map",
+    "main.d606ebf0.js.map": "/mystic/static/js/main.d606ebf0.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3d0f11f.css",
-    "static/js/main.0a5b28cb.js"
+    "static/js/main.d606ebf0.js"
   ]
 }
