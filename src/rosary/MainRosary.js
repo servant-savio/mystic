@@ -8,7 +8,7 @@ const MainRosary = () => {
   };
   return (
     <div className="image-container">
-      <img class="rosaryGuide" alt="Rosary Guide" src={rosaryGuide} />
+      <img className="rosaryGuide" alt="Rosary Guide" src={rosaryGuide} />
       <div className="joyful-mysteries-hotspot" onClick={() => handleHotSpotClick('joyful')}></div>
       <div className="sorrowful-mysteries-hotspot" onClick={() => handleHotSpotClick('sorrowful')}></div>
       <div className="luminous-mysteries-hotspot" onClick={() => handleHotSpotClick('luminous')}></div>

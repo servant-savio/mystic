@@ -80,7 +80,7 @@ const Rosary = () => {
             {titles.map((title, index) => {
                 if (index > 0) {
                   return(                    
-                    <button class="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >
+                    <button className="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >
                       <div className='buttonTitle'>
                         {title}
                       </div>
