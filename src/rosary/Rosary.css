@@ -2,7 +2,7 @@
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Adjust the max-width as needed */
+  max-width: 800px; /* Adjust the max-width as needed */
   margin: auto;
 }
 
@@ -17,7 +17,7 @@
   left: 2%; /* Adjust the left position in percentage */
   width: 20%; /* Adjust the width in percentage */
   height: 17%; /* Adjust the height in percentage */
-  /* background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
+/*  background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
   cursor: pointer;
 }
 
@@ -59,3 +59,32 @@
   max-width: 800px;
   width: 100%;
 }
+
+.mainRosary {
+  height: 100%;
+}
+
+.arrows {
+  height:5vh
+}
+
+.left-hotspot {
+  position: absolute;
+  top: 50%; /* Adjust the top position in percentage */
+  left: 0; /* Adjust the left position in percentage */
+  width: 4%; /* Adjust the width in percentage */
+  height: 12%; /* Adjust the height in percentage */
+/*  background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
+  cursor: pointer;
+}
+
+.right-hotspot {
+  position: absolute;
+  top: 50%; /* Adjust the top position in percentage */
+  left: 96%; /* Adjust the left position in percentage */
+  width: 4%; /* Adjust the width in percentage */
+  height: 12%; /* Adjust the height in percentage */
+/*  background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
+  cursor: pointer;
+}
+

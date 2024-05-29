@@ -11,8 +11,7 @@ import mainHero from '../images/joyful.png';
 
 export const joyfulTitle = "Joyful Mysteries";
 const title = joyfulTitle;
-export const JoyfulMysteries = () => {  
-  const schedule = "Monday, Saturday"
+export const JoyfulMysteries = ({next, prev}) => {  
   const mysteries = [
     "Annunciation",
     "Visitation",
@@ -20,6 +19,13 @@ export const JoyfulMysteries = () => {
     "Presentation",
     "Finding of Jesus in the Temple"
   ]
+
+  const handleNext = () => {
+    next();
+  }
+  const handlePrevious = () => {
+    prev();
+  }
 
   const hero = [
     mystery1Image,
@@ -30,12 +36,12 @@ export const JoyfulMysteries = () => {
   ];
   return (
     <Routes>
-      <Route path="" element={<MainComponent title hero={mainHero} />} />
-      <Route path="1" element={<Mystery details={{title, mystery: mysteries[0], hero: hero[0]}} />} />
-      <Route path="2" element={<Mystery details={{title, mystery: mysteries[1], hero: hero[1]}} />} />
-      <Route path="3" element={<Mystery details={{title, mystery: mysteries[2], hero: hero[2]}} />} />
-      <Route path="4" element={<Mystery details={{title, mystery: mysteries[3], hero: hero[3]}} />} />
-      <Route path="5" element={<Mystery details={{title, mystery: mysteries[4], hero: hero[4]}} />} />
+      <Route path="" element={<MainComponent title hero={mainHero} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()}/>} />
+      <Route path="1" element={<Mystery details={{title, mystery: mysteries[0], hero: hero[0]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
+      <Route path="2" element={<Mystery details={{title, mystery: mysteries[1], hero: hero[1]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
+      <Route path="3" element={<Mystery details={{title, mystery: mysteries[2], hero: hero[2]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
+      <Route path="4" element={<Mystery details={{title, mystery: mysteries[3], hero: hero[3]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
+      <Route path="5" element={<Mystery details={{title, mystery: mysteries[4], hero: hero[4]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
     </Routes>
   );
 };

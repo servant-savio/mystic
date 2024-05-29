@@ -39,10 +39,10 @@ const Rosary = () => {
     const location = useLocation();
     const locationPathBase = location.pathname.replace(/\/\d+$/gi, "").replace(/\/\d+$/gi, "");
     let currentIndex = routes.findIndex(route => location.pathname.endsWith(`/${route}`));
-    if (currentIndex==-1) {
+    if (currentIndex===-1) {
       currentIndex = 0;
     }
-    
+
     const handlePrevious = () => {
       if (currentIndex > 0) {
         currentIndex = currentIndex - 1;
@@ -68,7 +68,6 @@ const Rosary = () => {
       trackMouse: true
     });
     titles.forEach((value, index) => <button>Rosary Guide</button>);
-
   return (
       <div {...swipeHandlers}>
         <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
@@ -81,13 +80,13 @@ const Rosary = () => {
             }
           )}
         </div>
-      <div>
+      <div className='mainRosary'>
         <Routes>
           <Route path="" element={<MainRosary />} />
-          <Route path="joyful-mysteries/*" element={<JoyfulMysteries />} />
-          <Route path="sorrowful-mysteries/*" element={<SorrowfulMysteries />} />
-          <Route path="glorious-mysteries/*" element={<GloriousMysteries />} />
-          <Route path="luminous-mysteries/*" element={<LuminousMysteries />} />
+          <Route path="joyful-mysteries/*" element={<JoyfulMysteries prev={()=>handlePrevious()} next={()=>handleNext()} />} />
+          <Route path="sorrowful-mysteries/*" element={<SorrowfulMysteries prev={()=>handlePrevious()} next={()=>handleNext()} />} />
+          <Route path="glorious-mysteries/*" element={<GloriousMysteries prev={()=>handlePrevious()} next={()=>handleNext()} />} />
+          <Route path="luminous-mysteries/*" element={<LuminousMysteries prev={()=>handlePrevious()} next={()=>handleNext()} />} />
         </Routes>
       </div>
     </div>
