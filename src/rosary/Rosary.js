@@ -79,8 +79,12 @@ const Rosary = () => {
           <div className='buttonSubContainer'>          
             {titles.map((title, index) => {
                 if (index > 0) {
-                  return(
-                    <button class="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >{title}</button>            
+                  return(                    
+                    <button class="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >
+                      <div className='buttonTitle'>
+                        {title}
+                      </div>
+                    </button>            
                   )
                 }
               }

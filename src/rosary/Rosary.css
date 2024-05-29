@@ -94,16 +94,19 @@
 }
 
 .mysteryButtons {
-  width: 80px;
+  min-width: 90px;
   background-color: #284a60; /* Primary color */
   color: #ffffff; /* Text color */
-  padding: 10px; /* Padding for button */
+  padding: 7px; /* Padding for button */
   margin: 5px;
   border: none; /* Remove default border */
   border-radius: 2px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth background color transition */
   outline: none; /* Remove outline */  
+}
+.buttonTitle {
+  width: 80px;
 }
 .buttonSubContainer {
   max-width: 800px;
