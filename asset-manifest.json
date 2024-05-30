@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mystic/static/css/main.72dedcfc.css",
-    "main.js": "/mystic/static/js/main.372f5792.js",
+    "main.css": "/mystic/static/css/main.4a567ea6.css",
+    "main.js": "/mystic/static/js/main.621c7ad9.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
     "static/media/sorrowful-3-800.png": "/mystic/static/media/sorrowful-3-800.a590e82cc3160d1c8529.png",
     "static/media/luminous-2-800.png": "/mystic/static/media/luminous-2-800.ed93f068511b7b5d666a.png",
@@ -33,12 +33,12 @@
     "static/media/prayers-header.png": "/mystic/static/media/prayers-header.e3d16f08eccbcd0b8717.png",
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.65ceff31a33c265c22bd.png",
     "index.html": "/mystic/index.html",
-    "main.72dedcfc.css.map": "/mystic/static/css/main.72dedcfc.css.map",
-    "main.372f5792.js.map": "/mystic/static/js/main.372f5792.js.map",
+    "main.4a567ea6.css.map": "/mystic/static/css/main.4a567ea6.css.map",
+    "main.621c7ad9.js.map": "/mystic/static/js/main.621c7ad9.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72dedcfc.css",
-    "static/js/main.372f5792.js"
+    "static/css/main.4a567ea6.css",
+    "static/js/main.621c7ad9.js"
   ]
 }
