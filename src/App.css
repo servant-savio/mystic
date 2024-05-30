@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/Avenir-Medium.woff2') format('woff2'),
+       url('./fonts/Avenir-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
 .App {
   text-align: center;
 }
