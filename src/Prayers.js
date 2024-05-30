@@ -146,6 +146,9 @@ const Prayers = () => {
           fruit of thy womb, Jesus, O merciful, O loving, O 
           sweet Virgin Mary! Amen.
         </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         </div>
       </div>
     </div>
