@@ -75,3 +75,18 @@ main {
   height: 100vh;          /* Full height of the viewport */
   width: 100vw;           /* Full width of the viewport */
 }
+
+.generalContainer {
+  max-width: 400px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+.generalOuterContainer {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  height: 100vh;          /* Full height of the viewport */
+  width: 100vw;           /* Full width of the viewport */
+}
+
