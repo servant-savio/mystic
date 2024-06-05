@@ -15,3 +15,7 @@
 ## Follow us
 
 <a href="https://x.com/ProjectMysticDV"><img src="./images/ProjectMysticDVX.png" /></a>&nbsp;&nbsp;<a href="https://x.com/ServantSavio"><img src="./images/ServantSavioX.png" /></a>
+
+## Acknowledgements
+* Thanks to https://github.com/mborders/vulgata/ for bible json data.
+

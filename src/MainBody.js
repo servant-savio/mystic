@@ -6,6 +6,7 @@ import DivineMercy from './DivineMercy';
 import About from './About';
 import YouTube from './YouTube';
 import Prayers from './Prayers';
+import BibleSearch from './BibleSearch';
 
 const MainBody = () => {
   return (
@@ -18,6 +19,7 @@ const MainBody = () => {
         <Route path="/mystic/divine-mercy" element={<DivineMercy />} />
         <Route path="/mystic/about" element={<About />} />
         <Route path="/mystic/prayers" element={<Prayers />} />
+        <Route path="/mystic/bible" element={<BibleSearch />} />
       </Routes>
     </main>
   );
