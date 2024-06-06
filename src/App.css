@@ -90,3 +90,11 @@ main {
   width: 100vw;           /* Full width of the viewport */
 }
 
+.customizeButton {
+  position: absolute;
+  top: 55%; /* Adjust the top position in percentage */
+  left: 35%; /* Adjust the left position in percentage */
+  width: 30%; /* Adjust the width in percentage */
+  /*  background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
+  cursor: pointer;  
+}

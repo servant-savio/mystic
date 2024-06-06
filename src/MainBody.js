@@ -7,6 +7,7 @@ import About from './About';
 import YouTube from './YouTube';
 import Prayers from './Prayers';
 import BibleSearch from './BibleSearch';
+import Customize from './Customize';
 
 const MainBody = () => {
   return (
@@ -20,6 +21,7 @@ const MainBody = () => {
         <Route path="/mystic/about" element={<About />} />
         <Route path="/mystic/prayers" element={<Prayers />} />
         <Route path="/mystic/bible" element={<BibleSearch />} />
+        <Route path="/mystic/customize" element={<Customize />} />
       </Routes>
     </main>
   );
