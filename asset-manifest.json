@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mystic/static/css/main.2b5486a8.css",
-    "main.js": "/mystic/static/js/main.5a181c9b.js",
+    "main.css": "/mystic/static/css/main.eb30e274.css",
+    "main.js": "/mystic/static/js/main.a5cc2634.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
     "static/media/sorrowful-3-800.png": "/mystic/static/media/sorrowful-3-800.a590e82cc3160d1c8529.png",
     "static/media/luminous-2-800.png": "/mystic/static/media/luminous-2-800.ed93f068511b7b5d666a.png",
@@ -31,17 +31,19 @@
     "static/media/sorrowful-5-800.png": "/mystic/static/media/sorrowful-5-800.b544a3d13615f0d7daf1.png",
     "static/media/mystic-500.png": "/mystic/static/media/mystic-500.c58f838c838305211647.png",
     "static/media/bible-header.png": "/mystic/static/media/bible-header.60b6f0ed859dc89012c8.png",
+    "static/media/customizeHeader.png": "/mystic/static/media/customizeHeader.e921e033305452486ada.png",
     "static/media/prayers-header.png": "/mystic/static/media/prayers-header.e3d16f08eccbcd0b8717.png",
+    "static/media/customize.png": "/mystic/static/media/customize.19b603b9a4aac7b7c59c.png",
     "static/media/Avenir-Medium.woff": "/mystic/static/media/Avenir-Medium.3cceca82778395ea8ccc.woff",
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.65ceff31a33c265c22bd.png",
     "static/media/Avenir-Medium.woff2": "/mystic/static/media/Avenir-Medium.91ca83b63548f8293b36.woff2",
     "index.html": "/mystic/index.html",
-    "main.2b5486a8.css.map": "/mystic/static/css/main.2b5486a8.css.map",
-    "main.5a181c9b.js.map": "/mystic/static/js/main.5a181c9b.js.map",
+    "main.eb30e274.css.map": "/mystic/static/css/main.eb30e274.css.map",
+    "main.a5cc2634.js.map": "/mystic/static/js/main.a5cc2634.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b5486a8.css",
-    "static/js/main.5a181c9b.js"
+    "static/css/main.eb30e274.css",
+    "static/js/main.a5cc2634.js"
   ]
 }
