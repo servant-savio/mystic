@@ -115,15 +115,15 @@ const Customize = () => {
         <table className="link-list">
           <thead>
             <tr>
-              <th>Link</th>
-              <th>Action</th>
+              <th className='linkColumn'>Link</th>
+              <th className='actionColumn'>Action</th>
             </tr>
           </thead>
           <tbody>
             {storedLinks.map((linkObj, index) => (
               <tr key={index}>
-                <td><a href={linkObj.link} target="_blank" rel="noopener noreferrer">{linkObj.name}</a></td>
-                <td><button onClick={() => handleDelete(index)}>Delete</button></td>
+                <td className='linkColumn'><a href={linkObj.link} target="_blank" rel="noopener noreferrer">{linkObj.name}</a></td>
+                <td className='actionColumn'><button onClick={() => handleDelete(index)}>Delete</button></td>
               </tr>
             ))}
           </tbody>
