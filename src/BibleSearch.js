@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import prayersHeader from './images/prayers-header.png';
+import bibleHeader from './images/bible-header.png';
 import bibleData from './data/new-testament.json';
 
 const Prayers = () => {
@@ -140,7 +140,7 @@ const Prayers = () => {
 
   return (
     <div>
-      <img src={prayersHeader} alt="Bible Search"/>
+      <img src={bibleHeader} alt="Bible Search"/>
       <div>
         <input className='searchBox'
           type="text" 
