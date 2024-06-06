@@ -9,6 +9,7 @@ const Nav = () => {
         <li><Link to="/mystic/rosary">Rosary</Link></li>
         <li><Link to="/mystic/divine-mercy">Divine Mercy</Link></li>
         <li><Link to="/mystic/prayers">Prayers</Link></li>
+        <li><Link to="/mystic/bible">Bible</Link></li>
         <li><Link to="/mystic/about">About</Link></li>
       </ul>
     </nav>
