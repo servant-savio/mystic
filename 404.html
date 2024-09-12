@@ -14,7 +14,14 @@
   <!-- Add a script to redirect to index.html -->
   <script>
     window.onload = function() {
-      document.getElementById('redirect-message').innerText = `URL: ${window.location.href}`;
+      const basePath = '/mystic';
+      let currentPath = window.location.pathname;
+      let relativePath = currentPath.replace(basePath, '');
+      if (!relativePath.startsWith('/')) {
+        relativePath = '/' + relativePath;
+      }
+      document.getElementById('redirect-message').innerText = `Redirecting to /mystic?ref=${relativePath}`;
+      window.location.href = `/mystic?ref=${relativePath}`;
     };
   </script>
 </body>
