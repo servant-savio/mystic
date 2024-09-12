@@ -68,7 +68,6 @@ const PreLoad = () => {
       banner
     ]
     images.map((img) => preloadImage(img)
-      .then(() => console.log(`Image ${img} preloaded successfully`))
       .catch((error) => console.error('Failed to preload image', error)));
   }, []);
 
