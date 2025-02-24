@@ -16,7 +16,7 @@
     window.onload = function() {
       const basePath = '/mystic';
       let currentPath = window.location.pathname;
-      const redirectHref = `${basePath}?ref=${relativePath}`;
+      const redirectHref = `${basePath}?ref=${currentPath}`;
       console.log(`currentPath: ${currentPath}`);
       console.log(`redirectHref: ${redirectHref}`);
 
