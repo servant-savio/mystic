@@ -95,6 +95,8 @@ const Rosary = () => {
     trackMouse: true
   });
   titles.forEach((value, index) => <button>Rosary Guide</button>);
+  const getMysteryClaass = (index) => index === currentMystery ? "selectedMysteryButtons": "";
+  const getCurrentMenuClass = (index) => locationPathBase == mysteryRoutes[index] ? "currentMysteryPage" : "";
   return (
       <div {...swipeHandlers}>
         <div className='buttonContainer'>
@@ -102,7 +104,8 @@ const Rosary = () => {
             {titles.map((title, index) => {
                 if (index > 0) {
                   return(                    
-                    <button className={index === currentMystery ? "selectedMysteryButtons":"mysteryButtons"} key={index} onClick={()=>navigate(mysteryRoutes[index])} >
+                    <button className={ `mysteryButtons ${getMysteryClaass(index)} ${getCurrentMenuClass(index)}` } 
+                      key={index} onClick={()=>navigate(mysteryRoutes[index])} >
                       <div className='buttonTitle'>
                         {title}
                       </div>

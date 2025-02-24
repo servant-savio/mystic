@@ -40,7 +40,6 @@ const MainComponent = ({title, hero, handleNext, handlePrevious}) => {
         <div className="youtube-hotspot" onClick={() => youTube()}>
           <img className="youtubeLogo" src={youtubeLogo} alt="right arrow" />
         </div>
-
       </div> 
       <div>
         <Prayers prayers="Apostle's Creed" />

@@ -107,7 +107,7 @@
   justify-content: center;
 }
 
-.selectedMysteryButtons, .mysteryButtons {
+.mysteryButtons {
   min-width: 90px;
   background-color: #284a60; /* Primary color */
   color: #ffffff; /* Text color */
@@ -121,7 +121,11 @@
 }
 
 .selectedMysteryButtons {
-  background-color: #507d9c;
+  color: #ffea00; /* Text color */
+}
+
+.currentMysteryPage {
+  background-color: #618297; /* Primary color */
 }
 
 .buttonTitle {
