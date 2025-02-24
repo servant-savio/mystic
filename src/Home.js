@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import mysticLogo from './images/mystic-500.png';
 import customize from './images/customize.png';
 import FollowUs from './FollowUs';
+import Hallow from './Hallow';
+
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -26,6 +28,7 @@ const Home = () => {
       return (
         <div>
         <img className="mysticLogo" src={mysticLogo} alt="Mystic Logo" />
+        <br/>
         <img className="customizeButton" onClick={handleCustomize} src={customize} alt="Customize Button" />
         </div>
       )
@@ -48,7 +51,10 @@ const Home = () => {
           <p><Link to="/mystic/customize">&gt;&gt; Customize Quick Links</Link></p>
         </div>
       )}
+
       <FollowUs />
+      <Hallow />
+
     </div>
   );
 };

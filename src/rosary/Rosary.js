@@ -25,6 +25,28 @@ const Rosary = () => {
     '/mystic/rosary/luminous-mysteries'
   ];
 
+  const mysteries = {
+    "1": {
+      "days": ["Monday", "Saturday"]
+    },
+    "2": {
+      "days": ["Tuesday", "Friday"]
+    },
+    "3": {
+      "days": ["Sunday", "Wenesday"]
+    },
+    "4": {
+      "days": ["Thursday"]
+    }
+  }
+
+  const today = new Date();
+  const dayName = today.toLocaleDateString('en-US', { weekday: 'long' });
+
+  const currentMystery = parseInt(Object.keys(mysteries).find(mystery =>
+    mysteries[mystery].days.includes(dayName)
+  ));
+
   const routes = [
       '',
       '1',
@@ -80,12 +102,14 @@ const Rosary = () => {
             {titles.map((title, index) => {
                 if (index > 0) {
                   return(                    
-                    <button className="mysteryButtons" key={index} onClick={()=>navigate(mysteryRoutes[index])} >
+                    <button className={index === currentMystery ? "selectedMysteryButtons":"mysteryButtons"} key={index} onClick={()=>navigate(mysteryRoutes[index])} >
                       <div className='buttonTitle'>
                         {title}
                       </div>
                     </button>            
                   )
+                } else {
+                  return <></>
                 }
               }
             )}

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import prayersHeader from './images/prayers-header.png';
 import prayerData from './data/prayer.json';
 
-const Prayers = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+const Prayers = ({ prayers }) => {
+  const [searchTerm, setSearchTerm] = useState(prayers || '');
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -16,15 +16,19 @@ const Prayers = () => {
 
   return (
     <div>
-      <img src={prayersHeader} alt="Prayers"/>
-      <div>
-        <input className='searchBox'
-          type="text" 
-          placeholder="Search..." 
-          value={searchTerm} 
-          onChange={handleSearchChange}
-        />
-      </div>
+      {!prayers && (
+        <>
+          <img src={prayersHeader} alt="Prayers"/>
+          <div>
+            <input className='searchBox'
+              type="text" 
+              placeholder="Search..." 
+              value={searchTerm} 
+              onChange={handleSearchChange}
+            />
+          </div>
+        </>
+      )}
       <div className='outerPrayer'>
         <div className='prayerContainer'>
         {

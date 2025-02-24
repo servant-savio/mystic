@@ -78,6 +78,7 @@
   cursor: pointer;
 }
 
+
 .right-hotspot {
   position: absolute;
   top: 50%; /* Adjust the top position in percentage */
@@ -88,12 +89,25 @@
   cursor: pointer;
 }
 
+.youtubeLogo {
+  height:10vh
+}
+
+.youtube-hotspot {
+  position: absolute;
+  top: 80%; /* Adjust the top position in percentage */
+  left: 80%; /* Adjust the left position in percentage */
+  width: 20%; /* Adjust the width in percentage */
+  height: 20%; /* Adjust the height in percentage */
+  /* background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red for visibility */
+  cursor: pointer;
+}
 .buttonContainer {
   display: flex;
   justify-content: center;
 }
 
-.mysteryButtons {
+.selectedMysteryButtons, .mysteryButtons {
   min-width: 90px;
   background-color: #284a60; /* Primary color */
   color: #ffffff; /* Text color */
@@ -105,6 +119,11 @@
   transition: background-color 0.3s ease; /* Smooth background color transition */
   outline: none; /* Remove outline */  
 }
+
+.selectedMysteryButtons {
+  background-color: #507d9c;
+}
+
 .buttonTitle {
   width: 80px;
 }

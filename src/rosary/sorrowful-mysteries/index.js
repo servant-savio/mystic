@@ -12,7 +12,6 @@ import mainHero from '../images/sorrowful.png';
 export const sorrowfulTitle = "Sorrowful Mysteries";
 const title = sorrowfulTitle;
 export const SorrowfulMysteries = ({next, prev}) => {
-  const schedule = "Tuesday, Friday";
   const mysteries = [
     "Agony in the Garden",
     "Scourging at the Pillar",
@@ -37,7 +36,7 @@ export const SorrowfulMysteries = ({next, prev}) => {
 
   return (
     <Routes>
-      <Route path="" element={<MainComponent title hero={mainHero} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()}/>} />
+      <Route path="" element={<MainComponent title={title} hero={mainHero} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()}/>} />
       <Route path="1" element={<Mystery details={{title, mystery: mysteries[0], hero: hero[0]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
       <Route path="2" element={<Mystery details={{title, mystery: mysteries[1], hero: hero[1]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
       <Route path="3" element={<Mystery details={{title, mystery: mysteries[2], hero: hero[2]}} handleNext={()=> handleNext()} handlePrevious={()=> handlePrevious()} />} />
