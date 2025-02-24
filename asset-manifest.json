@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mystic/static/css/main.43756621.css",
-    "main.js": "/mystic/static/js/main.db6d160e.js",
+    "main.css": "/mystic/static/css/main.556d078a.css",
+    "main.js": "/mystic/static/js/main.68a3cf3e.js",
     "static/js/453.395c9716.chunk.js": "/mystic/static/js/453.395c9716.chunk.js",
     "static/media/sorrowful-3-800.png": "/mystic/static/media/sorrowful-3-800.a590e82cc3160d1c8529.png",
     "static/media/luminous-2-800.png": "/mystic/static/media/luminous-2-800.ed93f068511b7b5d666a.png",
@@ -38,13 +38,14 @@
     "static/media/Avenir-Medium.woff": "/mystic/static/media/Avenir-Medium.3cceca82778395ea8ccc.woff",
     "static/media/mystic-header-main.png": "/mystic/static/media/mystic-header-main.65ceff31a33c265c22bd.png",
     "static/media/Avenir-Medium.woff2": "/mystic/static/media/Avenir-Medium.91ca83b63548f8293b36.woff2",
+    "static/media/youtube-logo.webp": "/mystic/static/media/youtube-logo.497cea88ddf296627ed5.webp",
     "index.html": "/mystic/index.html",
-    "main.43756621.css.map": "/mystic/static/css/main.43756621.css.map",
-    "main.db6d160e.js.map": "/mystic/static/js/main.db6d160e.js.map",
+    "main.556d078a.css.map": "/mystic/static/css/main.556d078a.css.map",
+    "main.68a3cf3e.js.map": "/mystic/static/js/main.68a3cf3e.js.map",
     "453.395c9716.chunk.js.map": "/mystic/static/js/453.395c9716.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43756621.css",
-    "static/js/main.db6d160e.js"
+    "static/css/main.556d078a.css",
+    "static/js/main.68a3cf3e.js"
   ]
 }
