@@ -4,6 +4,12 @@
 
 * https://servant-savio.github.io/mystic/
 
+## Deploy
+
+```
+npm run deploy
+```
+
 ## Screenshots
 ### Desktop
 ![alt text](images/screenshot.png)
