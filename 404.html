@@ -16,12 +16,12 @@
     window.onload = function() {
       const basePath = '/mystic';
       let currentPath = window.location.pathname;
-      let relativePath = currentPath.replace(basePath, '');
-      if (!relativePath.startsWith('/')) {
-        relativePath = '/' + relativePath;
-      }
-      document.getElementById('redirect-message').innerText = `Redirecting to /mystic?ref=${relativePath}`;
-      window.location.href = `/mystic?ref=${relativePath}`;
+      const redirectHref = `${basePath}?ref=${relativePath}`;
+      console.log(`currentPath: ${currentPath}`);
+      console.log(`redirectHref: ${redirectHref}`);
+
+      document.getElementById('redirect-message').innerText = `Redirecting to ${redirectHref}`;
+      window.location.href = redirectHref;
     };
   </script>
 </body>
